@@ -10,9 +10,11 @@ public class Kolejka {
 
         int suma = 0;
         String wynik = "";
+        Scanner scan = new Scanner(System.in);
+
         int i = 0;
         while (i < 10) {
-            Scanner scan = new Scanner(System.in);
+
 
             System.out.println("Podaj liczbę: ");
             queue.offer(scan.nextInt());
