@@ -18,11 +18,11 @@ public class Kolejka {
 
             System.out.println("Podaj liczbę: ");
             queue.offer(scan.nextInt());
-            suma += ((LinkedList<Integer>) queue).peekLast();
+            suma += ((LinkedList<Integer>) queue).peek();
             if (i != 9) {
-                wynik += ((LinkedList<Integer>) queue).peekLast() + "+";
+                wynik += ((LinkedList<Integer>) queue).poll() + "+";
             } else
-                wynik += ((LinkedList<Integer>) queue).peekLast() + "=";
+                wynik += ((LinkedList<Integer>) queue).poll() + "=";
 
             i++;
 
